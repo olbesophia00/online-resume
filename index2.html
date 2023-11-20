@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Landing Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("images/moon.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .row{
+            width: 100%;
+            padding: 0px 80px;
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 1;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .navbar ul li{
+            list-style: none;
+        }
+        .navbar ul li a{
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-family: 'Times New Roman';
+            font-size: 16px;
+            color:snow;
+            text-decoration: none;
+        }
+        .navbar ul li a:hover{
+            background-color: lightskyblue;
+        }
+        .navbar h1{
+            color: ghostwhite;
+            font-size: 35px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        .content{
+            width: 100%;
+            min-height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content h1{
+            font-size: 45px;
+            color: paleturquoise;
+            font-weight: 400;
+        }
+        .content p{
+            font-size: 16px;
+            color: black;
+        }
+        .content a{
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 19px;
+            display: inline-block;
+            letter-spacing: 2px;
+            padding: 12px 20px;
+            background-color: lightskyblue;
+            border-radius: 5px;
+            color: black;
+        }
+        .content a:hover{
+            background-color: violet;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar">
+                    <h1>Logo</h1>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Info</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>The Moon of starlight</h1>
+                    <p>Shoot for the moon. Even if you miss it you will land among the stars</p>
+                    <p>The night walked down the sky with the moon in her hand</p>
+                    <p>The moon is a friend for the lonesome to talk to.</p>
+                    <a href=""> Join For Free</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
